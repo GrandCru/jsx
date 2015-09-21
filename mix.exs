@@ -14,7 +14,7 @@ use Mix.Project
   end
 
   defp opts(:dev), do: [d: :TEST] ++ opts(:prod)
-  defp opts(_), do: [d: :maps_support, d: :maps_always]
+  defp opts(_), do: [d: :maps_support]
 
   defp deps(_), do: [{:mixunit, "~> 0.9.2", only: :dev}]
 
